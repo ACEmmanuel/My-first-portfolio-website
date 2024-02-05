@@ -6,8 +6,8 @@
   --fs-600: clamp(1.3rem, 2vw, 3rem);
   --fs-600l: clamp(1rem, 2vw, 3rem);
   --fs-600sl: clamp(.8rem, 1vw, 2rem);
-  --fs-600s: clamp(.8rem, 1vw, 2rem);
-  --fs-hl: clamp( 18px, 6vw ,10rem);
+  --fs-600s: clamp(11px, 2vw, 2rem);
+  --fs-hl: clamp( 40px, 6vw ,10rem);
   --fs-hs: clamp( 3rem, 5vw, 6rem);
 
   --bg: #0d4394;
@@ -91,7 +91,8 @@ li:hover{
   padding: 10rem 0 0 0;
   height: 80dvh;
   color: black;
-  text-transform: uppercase;
+  text-wrap: wrap;
+  text-align: center;
 }
 
 .herotext{
@@ -100,13 +101,15 @@ li:hover{
   padding: 0 20px;
   position: relative;
   line-height: 1;
+  text-transform: uppercase;
   
 }
 
 .hero-about{
   font-size: var(--fs-600s);
   font-weight: 500;
-  padding: 0 3rem;
+  padding: 0 1rem;
+  color: rgb(71, 69, 69);
 }
 
 /* .herotext::after{
@@ -165,3 +168,8 @@ li:hover{
   }
   
 }
+
+@media screen and (max-width:320px) {
+  .hero{
+    padding: 5rem 0 0 0;
+  }}
