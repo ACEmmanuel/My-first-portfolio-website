@@ -3,10 +3,11 @@
   --font-normal: 1.3rem;
   --color: white;
   --font: 'Poppins', sans-serif;
+  --font2: Arial, Helvetica, sans-serif;
   --fs-600: clamp(1.3rem, 2vw, 3rem);
   --fs-600l: clamp(1rem, 2vw, 3rem);
   --fs-600sl: clamp(.8rem, 1vw, 2rem);
-  --fs-600s: clamp(11px, 2vw, 2rem);
+  --fs-600s: clamp(14px, 2vw, 2rem);
   --fs-hl: clamp( 40px, 6vw ,10rem);
   --fs-hs: clamp( 3rem, 5vw, 6rem);
 
@@ -34,7 +35,7 @@ body{
   background-color: var(--main-color);
   font-size: var(--font-normal);
   color: white;
-  font-family: var(--font);
+  font-family: var(--font2);
   width: 100vw;
 }
 
@@ -54,7 +55,7 @@ body{
   align-items: center;
   justify-content: space-between;
   text-transform: uppercase; 
-  padding: 0 3rem;
+  padding: 0 1rem;
 }
 
 .logo{
@@ -87,8 +88,8 @@ li:hover{
 
 /* hero design */
 .hero{
-  letter-spacing: 2px;
-  padding: 10rem 0 0 0;
+  
+  padding: 8rem 0 0 0;
   height: 80dvh;
   color: black;
   text-wrap: wrap;
@@ -102,13 +103,14 @@ li:hover{
   position: relative;
   line-height: 1;
   text-transform: uppercase;
+  letter-spacing: 2px;
   
 }
 
 .hero-about{
   font-size: var(--fs-600s);
   font-weight: 500;
-  padding: 0 1rem;
+  padding: 0 3rem;
   color: rgb(71, 69, 69);
 }
 
@@ -168,8 +170,3 @@ li:hover{
   }
   
 }
-
-@media screen and (max-width:320px) {
-  .hero{
-    padding: 5rem 0 0 0;
-  }}
