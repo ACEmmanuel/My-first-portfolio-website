@@ -88,7 +88,6 @@ li:hover{
 
 /* hero design */
 .hero{
-  
   padding: 8rem 0 0 0;
   height: 80dvh;
   color: black;
@@ -108,7 +107,7 @@ li:hover{
 }
 
 .hero-about{
-  font-size: var(--fs-600s);
+  font-size: var(--fs-500s);
   font-weight: 500;
   padding: 0 3rem;
   color: rgb(71, 69, 69);
