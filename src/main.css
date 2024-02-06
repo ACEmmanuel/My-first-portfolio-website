@@ -5,7 +5,7 @@
   --font: 'Poppins', sans-serif;
   --font2: Arial, Helvetica, sans-serif;
   --fs-600: clamp(1.3rem, 2vw, 3rem);
-  --fs-600l: clamp(1rem, 2vw, 3rem);
+  --fs-600l: clamp(1rem, 1vw, 2.5rem);
   --fs-600sl: clamp(.8rem, 1vw, 2rem);
   --fs-600s: clamp(14px, 2vw, 2rem);
   --fs-hl: clamp( 40px, 6vw ,10rem);
@@ -59,7 +59,7 @@ body{
 }
 
 .logo{
-  font-size: var(--fs-600);
+  font-size: var(--fs-600l);
   font-weight: 600;
 }
 
@@ -84,6 +84,7 @@ li:hover{
 
 #ham{
   display: none;
+  font-size: var(--fs-600l);
 }
 
 /* hero design */
