@@ -4,17 +4,17 @@
   --color: white;
   --font: 'Poppins', sans-serif;
   --font2: Arial, Helvetica, sans-serif;
-  --fs-600: clamp(1.3rem, 2vw, 3rem);
-  --fs-600l: clamp(1rem, 1vw, 2.5rem);
-  --fs-600sl: clamp(.8rem, 1vw, 2rem);
-  --fs-600s: clamp(14px, 2vw, 2rem);
-  --fs-hl: clamp( 40px, 6vw ,10rem);
-  --fs-hs: clamp( 3rem, 5vw, 6rem);
+
+  --fs-l: clamp(1rem, 2vw, 3rem);
+  --fs-n: clamp(1rem, 1vw, 2.5rem);
+  --fs-h: clamp(1rem, 6vw ,10rem);
+  --fs-ha: clamp(1rem, 5vw, 6rem);
 
   --bg: #0d4394;
 }
 
 html{
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
@@ -44,9 +44,9 @@ body{
   display: grid;
   align-items: center;
   width: 100%;
-  height: 14vh;
   background-color: var(--bg);
   box-shadow: 0 10px 100px rgba(0,0,0,.1);
+  line-height: 1.5;
 }
 
 .nav{
@@ -54,24 +54,20 @@ body{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  text-transform: uppercase; 
+  /* text-transform: uppercase;  */
   padding: 0 1rem;
 }
 
 .logo{
-  font-size: var(--fs-600l);
-  font-weight: 600;
+
 }
 
 .has{
   list-style: none;
-  font-size: 0.9rem;
   display: flex;
   flex-direction: row;
   align-items: baseline;
   gap: 3rem;
-  font-weight: 600;
-  font-size: var(--fs-600s);
 }
 
 .has:hover{
@@ -84,7 +80,6 @@ li:hover{
 
 #ham{
   display: none;
-  font-size: var(--fs-600l);
 }
 
 /* hero design */
@@ -97,8 +92,7 @@ li:hover{
 }
 
 .herotext{
-  font-size: var(--fs-hl);
-  font-weight: 700;
+
   padding: 0 20px;
   position: relative;
   line-height: 1;
@@ -108,10 +102,8 @@ li:hover{
 }
 
 .hero-about{
-  font-size: var(--fs-500s);
-  font-weight: 500;
   padding: 0 3rem;
-  color: rgb(71, 69, 69);
+  font-size: 1rem;
 }
 
 /* .herotext::after{
@@ -127,11 +119,11 @@ li:hover{
 
 .btn{
     background-color: var(--bg);
-    font-size: var(--fs-600s);
+    text-transform: uppercase;
+    font-size: 1rem;
     padding: 1rem 2rem;
     border-radius: 3px;
     color: #fbfbfb;
-    font-weight: 700;
     box-shadow: 0px 5px 10px #2b2b3148;
     transition: all 200ms;
     cursor: pointer;
