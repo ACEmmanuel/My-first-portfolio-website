@@ -1,7 +1,7 @@
 :root{
   /* --main-color: #ddd; */
   --color: white;
-  --font: 'Lato', sans-serif;
+  --font: 'Roboto', sans-serif;
 
   --fs-l: clamp(1.3rem, 2vw, 1.5rem);
   --fs-n: clamp(1rem, 1vw, 2.5rem);
@@ -55,6 +55,7 @@ body{
 .logo{
   font-size: var(--fs-l);
   font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .has{
