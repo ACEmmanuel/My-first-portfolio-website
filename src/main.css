@@ -57,7 +57,7 @@ body{
   align-items: center;
   font-size: var(--fs-t);
   justify-content: space-between;
-  /* text-transform: uppercase;  */
+  text-transform: uppercase; 
   padding: 0 2rem;
 }
 
@@ -100,7 +100,7 @@ li:hover{
   font-weight: 900;
   padding: 0 20px;
   position: relative;
-  line-height: 1;
+  line-height: 1.3;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
