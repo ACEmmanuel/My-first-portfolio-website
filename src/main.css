@@ -2,19 +2,20 @@
   /* --main-color: #ddd; */
   --font-normal: 1.3rem;
   --color: white;
-  --font: 'Poppins', sans-serif;
-  --font2: Arial, Helvetica, sans-serif;
+  --font1: 'Poppins', sans-serif;
+  --font2: 'Lato', sans-serif;
 
-  --fs-l: clamp(1rem, 2vw, 3rem);
+  --fs-l: clamp(1.3rem, 2vw, 1.5rem);
   --fs-n: clamp(1rem, 1vw, 2.5rem);
-  --fs-h: clamp(1rem, 6vw ,10rem);
+  --fs-h: clamp(3rem, 6vw, 4.5rem);
   --fs-ha: clamp(1rem, 5vw, 6rem);
+  --fs-t: clamp(1rem, 16px, 18px);
 
   --bg: #0d4394;
 }
 
 html{
-  font-size: 16px;
+  font-size: 18px;
   scroll-behavior: smooth;
 }
 
@@ -47,19 +48,22 @@ body{
   background-color: var(--bg);
   box-shadow: 0 10px 100px rgba(0,0,0,.1);
   line-height: 1.5;
+  padding: 1.5rem 0;
 }
 
 .nav{
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-size: var(--fs-t);
   justify-content: space-between;
   /* text-transform: uppercase;  */
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 .logo{
-
+  font-size: var(--fs-l);
+  font-weight: 700;
 }
 
 .has{
@@ -67,7 +71,7 @@ body{
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .has:hover{
@@ -92,18 +96,18 @@ li:hover{
 }
 
 .herotext{
-
+  font-size: var(--fs-h);
+  font-weight: 900;
   padding: 0 20px;
   position: relative;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
-  
 }
 
 .hero-about{
   padding: 0 3rem;
-  font-size: 1rem;
+  font-size: var(--fs-n);
 }
 
 /* .herotext::after{
@@ -119,9 +123,10 @@ li:hover{
 
 .btn{
     background-color: var(--bg);
+    font-size: var(--fs-n);
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 1rem;
-    padding: 1rem 2rem;
+    padding: 0.8rem 1.5rem;
     border-radius: 3px;
     color: #fbfbfb;
     box-shadow: 0px 5px 10px #2b2b3148;
@@ -148,17 +153,30 @@ li:hover{
 
 
 
+/* Laptops */
+@media screen and (max-width: 768px){
+  html{
+    font-size: 16px;
+  }
+  
+}
 
-@media screen and (max-width: 768px) and (max-width: 1024px){
+/* large mobile to smaller ones */
+@media screen and (max-width: 544px){
+  html{
+    font-size: 16px;
+  }
+
   .has{
     display: none;
   }
   #ham{
     display: block;
   }
+}
 
-  .header{
-    height: 5rem;
+@media screen and (max-width: 320px) {
+  html{
+    font-size: 14px;
   }
-  
 }
