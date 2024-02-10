@@ -9,6 +9,7 @@
   --fs-nav: clamp(1rem, 1vw, 20rem);
   --fs-hero: clamp(2.5rem, 6vw, 4.5rem);
   --fs-h-about: clamp(1rem, 1.6vw, 6rem);
+  --fs-h-text: clamp(1.2rem, 1vw, 3rem);
   --fs-text: clamp(1rem, 16px, 18px);
 
   --main-clr: #0d4394;
@@ -25,6 +26,7 @@
   padding: 0;
   margin: 0;
   line-height: 1.5;
+  list-style: none;
 }
 
 body{
@@ -34,10 +36,12 @@ body{
 /* header design */
 .header{
   color: white;
-  width: 100%;
+  width: 100%;  
   background-color: var(--main-clr);
   box-shadow: 0 10px 100px rgba(0,0,0,.1);
   padding: 1.5rem 0;
+  position: fixed;
+  z-index: 999;
 }
 
 .logo{
@@ -56,7 +60,6 @@ body{
 }
 
 .has{
-  list-style: none;
   display: flex;
   flex-direction: row;
   gap: 3rem;
@@ -78,11 +81,11 @@ li:hover{
 
 /* hero design */
 .hero{
-  padding: 8rem 0 0 0;
-  height: 90dvh;
+  padding-top: 15rem;
+  height: 100dvh;
   color: black;
   text-align: center;
-  
+  background-image: url('./assets/bg.jpg');
 }
 
 .herotext{
@@ -126,8 +129,40 @@ hr{
 }
 
 .container{
-  font-size: var(--fs-nav);
+  font-size: var(--fs-h-text);
 }
+
+.content{
+  display: grid;
+  grid-template-columns: 1repeat( autofit, minmax( min(100%, 200px),  1fr));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
