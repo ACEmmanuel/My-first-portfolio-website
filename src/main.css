@@ -79,7 +79,7 @@ li:hover{
 
 /* hero design */
 .hero{
-  padding-top: 15rem;
+  padding-top: 35vh;
   height: 100dvh;
   color: black;
   text-align: center;
@@ -119,8 +119,8 @@ li:hover{
 
 hr{
   margin-inline: auto;
-  width: 100px;
-  height: 10px;
+  width: 40px;
+  height: 8px;
   background-color: var(--main-clr);
   border: none;
   border-radius: 10px;
@@ -133,8 +133,14 @@ hr{
 
 .content{
   display: grid;
-  grid-template-columns: 1repeat( autofit, minmax( min(100%, 200px),  1fr));
-  padding: 0 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  text-wrap: balance;
+  padding: 0 1.5rem;
+}
+
+.c1{
+  text-align: left;
 }
 
 
@@ -196,6 +202,10 @@ hr{
   }
   #ham{
     display: block;
+  }
+
+  .hero{
+    padding-top: 25vh;
   }
 }
 
