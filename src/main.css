@@ -9,7 +9,7 @@
   --fs-nav: clamp(1rem, 1vw, 20rem);
   --fs-hero: clamp(2.5rem, 6vw, 4.5rem);
   --fs-h-about: clamp(1rem, 1.6vw, 6rem);
-  --fs-h-text: clamp(1.2rem, 1vw, 3rem);
+  --fs-h-text: clamp(1rem, 1vw, 3rem);
   --fs-text: clamp(1rem, 16px, 18px);
 
   --main-clr: #0d4394;
