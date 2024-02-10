@@ -8,12 +8,13 @@ const Body = () =>{
     <>
     
     <div className='hero'>
-    <p className='herotext'>hello, I'm emmanuel</p>
+    <h1 className='herotext'>hello, I'm emmanuel</h1>
     <br></br>
     <p className='hero-about'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
     <br />
     <div className='btn'>contact me</div>
    </div>
+   
    
     </>
   )
