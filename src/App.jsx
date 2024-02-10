@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import React from 'react';
 import Header from './header.jsx'
 import Body from './body.jsx'
+import About from './about.jsx';
 import './main.css'
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
     <>
        <Header />
        <Body /> 
-       
+       <About />
     </>)
 }
 

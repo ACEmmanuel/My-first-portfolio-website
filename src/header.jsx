@@ -19,7 +19,6 @@ const Header = () =>{
     </nav>
     
     </div>
-    {/* <hr></hr> */}
    
     </>
   )

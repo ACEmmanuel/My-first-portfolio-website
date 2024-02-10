@@ -5,13 +5,13 @@
 
   /* 'Roboto', sans-serif   */
 
-  --fs-logo: clamp(1rem, 2vw, 1.5rem);
+  --fs-logo: clamp(1rem, 2vw, 2rem);
   --fs-nav: clamp(1rem, 1vw, 20rem);
   --fs-hero: clamp(2.5rem, 6vw, 4.5rem);
   --fs-h-about: clamp(1rem, 1.6vw, 6rem);
   --fs-text: clamp(1rem, 16px, 18px);
 
-  --bg: #0d4394;
+  --main-clr: #0d4394;
 }
 
 /* html{
@@ -29,13 +29,13 @@
 
 body{
   background-color: var(--main-color);
-  color: white;
 }
 
 /* header design */
 .header{
+  color: white;
   width: 100%;
-  background-color: var(--bg);
+  background-color: var(--main-clr);
   box-shadow: 0 10px 100px rgba(0,0,0,.1);
   padding: 1.5rem 0;
 }
@@ -72,6 +72,7 @@ li:hover{
 }
 
 #ham{
+
   display: none;
 }
 
@@ -100,7 +101,7 @@ li:hover{
 
 
 .btn{
-    background-color: var(--bg);
+    background-color: var(--main-clr);
     font-size: var(--fs-nav);
     text-transform: uppercase;
     padding: 1rem 2.5rem;
@@ -111,6 +112,21 @@ li:hover{
     cursor: pointer;
     display: inline-block;
     margin-top: 2rem;
+}
+
+/* About section */
+
+hr{
+  margin-inline: auto;
+  width: 100px;
+  height: 10px;
+  background-color: var(--main-clr);
+  border: none;
+  border-radius: 10px;
+}
+
+.container{
+  font-size: var(--fs-nav);
 }
 
 
@@ -126,15 +142,11 @@ li:hover{
 
 
 
-
-
-
-
-/* Laptops */
-/*@media screen and (max-width: 768px){
-  html{
+/* Laptops*/
+@media screen and (max-width: 768px){
+  /* html{
     font-size: 16px;
-  }
+  } */
   
 }
 
@@ -156,4 +168,4 @@ li:hover{
   /* html{
     font-size: 14px;
   } */
-}/* */
+}
