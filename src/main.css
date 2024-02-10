@@ -1,16 +1,13 @@
 :root{
-  /* --main-color: #ddd; */
   --color: white;
   --font: 'Roboto', sans-serif;
 
-  /* 'Roboto', sans-serif   */
-
   --fs-logo: clamp(1rem, 2vw, 2rem);
-  --fs-nav: clamp(1rem, 1vw, 20rem);
+  --fs-nav: clamp(1rem, 1vw, 10rem);
   --fs-hero: clamp(2.5rem, 6vw, 4.5rem);
-  --fs-h-about: clamp(1rem, 1.6vw, 6rem);
-  --fs-h-text: clamp(1rem, 1vw, 3rem);
-  --fs-text: clamp(1rem, 16px, 18px);
+  --fs-h-about: clamp(1.2rem, 1.6vw, 6rem);
+  --fs-h-text: clamp(1rem, 1.6vw, 3rem);
+  /* --fs-text: clamp(1rem, 16px, 18px); */
 
   --main-clr: #0d4394;
 }
@@ -64,6 +61,7 @@ body{
   flex-direction: row;
   gap: 3rem;
   text-transform: uppercase; 
+  letter-spacing: 1px;
 }
 
 .has:hover{
@@ -130,11 +128,13 @@ hr{
 
 .container{
   font-size: var(--fs-h-text);
+  padding: auto;
 }
 
 .content{
   display: grid;
   grid-template-columns: 1repeat( autofit, minmax( min(100%, 200px),  1fr));
+  padding: 0 1rem;
 }
 
 
