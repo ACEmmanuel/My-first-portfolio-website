@@ -5,10 +5,10 @@
 
   /* 'Roboto', sans-serif   */
 
-  --fs-logo: clamp(1.3rem, 2vw, 1.5rem);
+  --fs-logo: clamp(1rem, 2vw, 1.5rem);
   --fs-nav: clamp(1rem, 1vw, 20rem);
-  --fs-hero: clamp(3rem, 6vw, 4.5rem);
-  --fs-h-about: clamp(1.2rem, 1vw, 5rem);
+  --fs-hero: clamp(2.5rem, 6vw, 4.5rem);
+  --fs-h-about: clamp(1rem, 1.6vw, 6rem);
   --fs-text: clamp(1rem, 16px, 18px);
 
   --bg: #0d4394;
@@ -24,6 +24,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  line-height: 1.5;
 }
 
 body{
@@ -36,8 +37,13 @@ body{
   width: 100%;
   background-color: var(--bg);
   box-shadow: 0 10px 100px rgba(0,0,0,.1);
-  line-height: 1.5;
   padding: 1.5rem 0;
+}
+
+.logo{
+  font-size: var(--fs-logo);
+  /* font-weight: 700; */
+  letter-spacing: 1px;
 }
 
 .nav{
@@ -46,21 +52,15 @@ body{
   align-items: center;
   font-size: var(--fs-text);
   justify-content: space-between;
-  text-transform: uppercase; 
   padding: 0 2rem;
-}
-
-.logo{
-  font-size: var(--fs-logo);
-  font-weight: 700;
-  letter-spacing: 1px;
 }
 
 .has{
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 3rem;
+  text-transform: uppercase; 
 }
 
 .has:hover{
@@ -81,7 +81,7 @@ li:hover{
   height: 90dvh;
   color: black;
   text-align: center;
-  text-wrap: balance;
+  
 }
 
 .herotext{
@@ -102,9 +102,8 @@ li:hover{
 .btn{
     background-color: var(--bg);
     font-size: var(--fs-nav);
-    /* font-weight: 700; */
     text-transform: uppercase;
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
     border-radius: 3px;
     color: #fbfbfb;
     box-shadow: 0px 5px 10px #2b2b3148;
@@ -140,7 +139,7 @@ li:hover{
 }
 
  /*large mobile to smaller ones*/ 
- @media screen and (max-width: 526px){
+ @media screen and (max-width: 675px){
   /* html{
     font-size: 16px;
   } */
