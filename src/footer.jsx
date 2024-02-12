@@ -11,6 +11,7 @@ const Footer = () =>{
                         <ul className="social">
                             <a target="_blank" href="https://github.com/ACEmmanuel"><li class="fa-brands fa-github"></li></a>
                             <a target="_blank" href="https://www.linkedin.com/in/emmanuel-chidera-b08479245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=andriod_app"><i class="fa-brands fa-linkedin"></i></a>
+                            <a target="_blank" href="https://twitter.com/Only_1_ACE"><i class="fa-brands fa-x-twitter"></i></a>
                         </ul>
                     </div>
                     <div className="contain">

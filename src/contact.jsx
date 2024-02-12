@@ -6,7 +6,7 @@ import './main.css'
 const Contact = () =>{
     return(
         <>
-        <section className="container">
+        <section className="container" id="Contact">
             <br></br>
                 <h1 className="head">CONTACT</h1>
                 <hr className="hr"></hr>

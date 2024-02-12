@@ -3,7 +3,8 @@
   --font: 'Lato', sans-serif;
 
   --fs-logo: clamp(1.2rem, 2vw, 2rem);
-  --fs-nav: clamp(.8rem, 1vw, 10rem);
+  --fs-nav: clamp(.6rem, .8vw, 10rem);
+  --fs-btn: clamp(.8rem, 1vw, 10rem);
   --fs-hero: clamp(3rem, 6vw, 4.5rem);
   --fs-h-about: clamp(1.1rem, 1.6vw, 6rem);
   --fs-h-text: clamp(1rem, 1.3vw, 3rem);
@@ -12,11 +13,10 @@
   --main-clr: #0d4394;
 }
 
-/* html{
-  font-size: 18px;
+html{
   scroll-behavior: smooth;
-  font-family: var(--font);
-} */
+  scroll-padding-top: 7rem;
+}
 
 *{
   box-sizing: border-box;
@@ -55,6 +55,7 @@ body{
   font-size: var(--fs-h-text);
   justify-content: space-between;
   padding: 0 2rem;
+  position: relative;
 }
 
 .has{
@@ -74,39 +75,51 @@ li:hover{
  font-weight: bold;
 }
 
-#ham{
-
+#menu{
   display: none;
+}
+
+#menu:hover{
+  font-size: 20px;
+}
+
+#close:hover{
+  font-size: 20px;
 }
 
 /* hero design */
 .hero{
-  padding-top: 35vh;
-  height: 100dvh;
+  display: grid;
+  place-items: center;
+  height: 100vh;
   color: black;
   text-align: center;
-  /* background-image: url('./assets/bg.jpg'); */
+  text-wrap: balance;
 }
 
-.herotext{
+.hero-container{
+  padding-top: 15vh;
+}
+
+.hero-text{
   font-size: var(--fs-hero);
   position: relative;
   line-height: 1.3;
   text-transform: uppercase;
-  letter-spacing: 5px;
-  font-weight: 700;
-  padding: 5px;
+  letter-spacing: 3px;
+  font-weight: 900;
+  /* padding: 5px; */
 }
 
 .hero-about{
   font-size: var(--fs-h-about);
-  padding: 0 1rem;
+  padding: 0 .6rem;
 }
 
 
 .btn{
     background-color: var(--main-clr);
-    font-size: var(--fs-nav);
+    font-size: var(--fs-btn);
     padding: 1rem 2.5rem;
     border-radius: 3px;
     color: #fbfbfb;
@@ -137,7 +150,7 @@ li:hover{
 }
 
 .container{
-  margin-top: 3rem;
+  margin-top: 5rem;
   font-size: var(--fs-h-text);
 }
 
@@ -292,13 +305,46 @@ a{
   color: white;
 }
 
+/* drop down menu */
+.dropdown-content{
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding: 1rem;
+  width: 100vw;
+  background-color: black;
+  right: 0;
+  top: 8vh;
+}
+
+.dropdown-container {
+  display: none;
+  /* border: 1px solid red; */
+  /* position: relative; */
+}
+
+.dropdown-content li {
+  margin-bottom: 2rem;
+}
+
+.dropdown-content li:first-child {
+  margin-top: 2rem;
+}
 
 
 
-
-
-
-
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: #fff; /* Set the color as needed */
+}
 
 
 
@@ -331,23 +377,22 @@ a{
 
  /*large mobile to smaller ones*/ 
  @media screen and (max-width: 675px){
-
   .has{
     display: none;
   }
-  #ham{
+
+  #menu{
     display: block;
   }
 
-  .hero{
-    padding-top: 25vh;
+  .dropdown-container{
+    display: block;
+    
   }
-}
+ }
 
  @media screen and (max-width: 500px){
-  .hero{
-    padding-top: 33vh;
-  }
+
 }
 
 @media screen and (max-width: 320px) {

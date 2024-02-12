@@ -7,12 +7,14 @@ const Body = () =>{
   return(
     <>
     
-    <div className='hero'>
-    <h1 className='herotext'>hello, I'm emmanuel</h1>
-    <br></br>
-    <p className='hero-about'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
-    <br />
-    <div className='btn'>PROJECTS</div>
+    <div className='hero' id='Home'>
+      <div className='hero-container'>
+        <h1 className='hero-text'>hello, I'm emmanuel</h1>
+        <br></br>
+        <p className='hero-about'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
+        <br />
+        <div className='btn'>PROJECTS</div>
+      </div>  
    </div>
    
    
