@@ -56,6 +56,7 @@ body{
   justify-content: space-between;
   padding: 0 2rem;
   position: relative;
+  z-index: 999;
 }
 
 .has{
@@ -316,13 +317,12 @@ a{
   width: 100vw;
   background-color: black;
   right: 0;
-  top: 8vh;
+  top: 9vh;
+  
 }
 
 .dropdown-container {
   display: none;
-  /* border: 1px solid red; */
-  /* position: relative; */
 }
 
 .dropdown-content li {
