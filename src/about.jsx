@@ -20,41 +20,12 @@ const About = () => {
                         <br></br>
     
                     <p>I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
-
                     </div>
+
+
                     </div>
                     <div className="c2">
-                        <h3 className="sub-head">My Skills</h3>
-                        <ul className="skill">
-                            <li>Css</li>
-                            <li>Git</li>
-                            <li>HTML</li>
-                            <li>React</li>
-                            <li>Github</li>
-                            <li>Express</li>
-                            <li>MongoDB</li>
-                            <li>Terminal</li>
-                            <li>Javascript</li>
-                            <li>Graphic Design</li>
-                        </ul>
-
-                        <br></br>
-                        <br></br>
-
-                            <h3 className="sub-head">Codes I love</h3>
-                        <ul className="skill">
-                            <li>Tailwind</li>
-                            <li>NextJs</li>
-                            <li>Astro</li>
-                            <li>Typescript</li>
-                            {/* <li>Github</li>
-                            <li>Express</li>
-                            <li>MongoDB</li>
-                            <li>Terminal</li>
-                            <li>Javascript</li>
-                            <li>Graphic Design</li> */}
-                            {/* <li>Responsive Design</li> */}
-                        </ul>
+                        <img src="../public/ace.jpg" className="profile"></img>
                     </div>
             </div>
             </section>
@@ -69,3 +40,33 @@ const About = () => {
 export default About;
 
 
+{/* <h3 className="sub-head">Codes I love</h3>
+                        <ul className="skill">
+                            <li>Tailwind</li>
+                            <li>NextJs</li>
+                            <li>Astro</li>
+                            <li>Typescript</li>
+                            {/* <li>Github</li>
+                            <li>Express</li>
+                            <li>MongoDB</li>
+                            <li>Terminal</li>
+                            <li>Javascript</li>
+                            <li>Graphic Design</li> */}
+                            {/* <li>Responsive Design</li> 
+                        </ul> */}
+
+
+
+ {/* <h3 className="sub-head">My Skills</h3>
+                        <ul className="skill">
+                            <li>Css</li>
+                            <li>Git</li>
+                            <li>HTML</li>
+                            <li>React</li>
+                            <li>Github</li>
+                            <li>Express</li>
+                            <li>MongoDB</li>
+                            <li>Terminal</li>
+                            <li>Javascript</li>
+                            <li>Graphic Design</li>
+                        </ul> */}
