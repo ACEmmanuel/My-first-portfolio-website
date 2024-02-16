@@ -25,7 +25,7 @@ const About = () => {
 
                     </div>
                     <div className="c2">
-                        <img src="../public/ace.jpg" className="profile"></img>
+                        <img src="/ace.jpg" className="profile"></img>
                     </div>
             </div>
             </section>
