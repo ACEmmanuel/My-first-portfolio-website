@@ -75,7 +75,6 @@ body{
 
 .has{
   display: flex;
-  /* flex-direction: row; */
   gap: 1rem;
   letter-spacing: 1px;
   font-size: var(--fs-h-text);
@@ -102,10 +101,11 @@ body{
 .hero{
   display: grid;
   place-items: center;
-  height: 100vh;
+  height: 88vh;
   width: 100%;
   text-align: center;
   text-wrap: balance;
+  /* border: 1px solid red; */
 }
 
 /* .hero-container{

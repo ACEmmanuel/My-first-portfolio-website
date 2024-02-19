@@ -9,7 +9,7 @@ const Skills = () => {
                     <h1 className="head">SKILLS</h1>
                     <hr className="hr"></hr>
                     <br></br>
-                    <p className="more">I'm proficient in the following languages</p>
+                    <p className="more">I am proficient in the following languages</p>
                     <div className="skill-container">
                         <ul className="skill">
                             <li> Css</li>
