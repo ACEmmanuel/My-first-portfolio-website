@@ -47,7 +47,8 @@ body{
   background-color: #181818c0;
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.11);
   padding: 1.5rem 0;
-  position: fixed;
+  position: sticky;
+  top: 0;
   backdrop-filter: blur(10px);
 }
 
@@ -107,9 +108,9 @@ body{
   text-wrap: balance;
 }
 
-.hero-container{
-  padding-top: 13vh;
-}
+/* .hero-container{
+  padding-top: 10vh;
+} */
 
 .hero-text{
   font-size: var(--fs-hero);
@@ -127,6 +128,8 @@ body{
 .hero-about{
   font-size: var(--fs-h-about);
   padding: 0 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 
