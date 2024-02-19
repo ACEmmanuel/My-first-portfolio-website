@@ -20,7 +20,7 @@ const Footer = () =>{
                     </div>
                 </div>
                 <hr className="hr-footer"></hr>
-                <h5>Made By ACEmmanuel. 2024</h5>
+                <h5><i>Made By ACEmmanuel 2024</i></h5>
                 {/* Shoutout to RAM MAHESHWARI for inspiration */}
             </section>
         </>

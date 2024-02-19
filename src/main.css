@@ -5,16 +5,16 @@
   --fs-logo: clamp(1.2rem, 2vw, 2rem);
   --fs-nav: clamp(.6rem, .8vw, 10rem);
   --fs-btn: clamp(.8rem, 1vw, 10rem);
-  --fs-hero: clamp(3rem, 6vw, 4.5rem);
-  --fs-h-about: clamp(1.1rem, 1.6vw, 6rem);
+  --fs-hero: clamp(2.5rem, 6vw, 4.5rem);
+  --fs-h-about: clamp(1rem, 1.6vw, 6rem);
   --fs-h-text: clamp(1rem, 1.3vw, 3rem);
   --fs-h-form: clamp(.8rem, .5vw, 2rem);
 
-  --main-clr: #1f1f1f;
   --main-color: #181818;
+  --main-clr: #1f1f1f;
   --grey-clr: #2b2b2b;
 
-  --bg-clr: blueviolet;
+  --bg-clr: rgb(43, 116, 226);
 }
 
 html{
@@ -34,10 +34,11 @@ html{
 body{
   background-color: var(--main-color);
   color: var(--color);
+  text-rendering: antialiased;
 }
 
 .clr{
-  color: blueviolet;
+  color: var(--bg-clr);
 }
 
 /* header design */
@@ -73,7 +74,7 @@ body{
 
 .has{
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   gap: 1rem;
   letter-spacing: 1px;
   font-size: var(--fs-h-text);
@@ -83,9 +84,9 @@ body{
   cursor: pointer;
 }
 
-li:hover{
+/* li:hover{
  font-weight: bold;
-}
+} */
 
 
 #menu:hover{
@@ -107,22 +108,25 @@ li:hover{
 }
 
 .hero-container{
-  padding-top: 15vh;
+  padding-top: 13vh;
 }
 
 .hero-text{
   font-size: var(--fs-hero);
+  
+  text-wrap: wrap;
   position: relative;
   line-height: 1.3;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 900;
   z-index: -999;
+  padding-inline: 1rem;
 }
 
 .hero-about{
   font-size: var(--fs-h-about);
-  padding: 0 .6rem;
+  padding: 0 1rem;
 }
 
 
@@ -157,6 +161,7 @@ li:hover{
 
 .container{
   margin-top: 5rem;
+  padding-inline: .5rem;
   font-size: var(--fs-h-text);
   margin-inline: auto;
 }
@@ -167,6 +172,8 @@ li:hover{
   gap: 2rem;
   padding: 0 1rem;
   margin-top: 2rem;
+  text-wrap: wrap;
+  justify-content: center;
 }
 
 .c1, .c2{
@@ -179,8 +186,6 @@ li:hover{
   align-items: center;
   width: 100%;
   margin-inline: auto;
-  /* text-align: left; */
-  /* padding-top: 4rem; */
 }
 
 .profile{
@@ -206,21 +211,10 @@ li:hover{
   color: var(--bg-clr);
 }
 
-.skill{
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  
-}
-
-.skill  li{
-  background-color: var(--grey-clr);
-  border-radius: 3px;
-  padding: .5rem 1rem;
-}
 
 .more{
-  padding: 0 .5rem;
+  padding: 0 1rem;
+  font-weight: bold;
   text-wrap: balance;
 }
 
@@ -228,6 +222,40 @@ li:hover{
   line-height: 1.5;
   text-wrap: balance;
 }
+
+/* skills */
+.skill-container{
+  text-align: center;
+  padding-inline: 3rem;
+}
+
+.skill{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.skill  li{
+  background-color: var(--grey-clr);
+  border-radius: 0 3px 3px 0;
+  padding: .5rem 1.2rem;
+  font-weight: bold;
+  /* border-left: 5px solid var(--bg-clr); */
+  border-bottom: 1px solid var(--bg-clr);
+}
+
+.icon{
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+/* Projects */
+
+
 
 /* contact me */
 
@@ -271,18 +299,19 @@ textarea{
 
 .form-content{
   box-shadow: 0 10px 100px rgba(0,0,0,.1);
-  background-color: #ddd;
+  background-color: var(--grey-clr);
   border-radius: 3px;
   padding: 2rem 2rem;
   width: 40rem;
-  max-width: 95%;
+  max-width: 90%;
 }
 
 input[type="submit"]{
-  background: var(--main-clr);
+  background: var(--bg-clr);
   color: white;
   font-weight: bold;
   letter-spacing: 1px;
+  box-shadow: 0 3px 3px rgba(19, 56, 112, 0.795);
 }
 
 
@@ -294,6 +323,7 @@ input[type="submit"]{
   background-color: black;
   padding: 2rem;
   color: white;
+  box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.11);
 }
 
 .foot{
@@ -417,6 +447,10 @@ a{
 
   .more-about, .sub-head{
     text-align: center;
+  }
+
+  .skill-container{
+    padding-inline: .5rem;
   }
  }
 

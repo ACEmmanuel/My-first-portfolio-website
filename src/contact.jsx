@@ -19,10 +19,10 @@ const Contact = () =>{
 
                     <input type="hidden" name="access_key" value="010493d8-a8a5-4340-8df3-cc813b83267d" />
 
-                    <div className="form">
+                    {/* <div className="form">
                             <label>Name</label>
                             <input type="text" name="name" placeholder="Enter Your Name..." required></input>
-                    </div>
+                    </div> */}
                     <div className="form">
                             <label>Email</label>
                             <input type="email" name="email" placeholder="Enter Your Email..." required></input>

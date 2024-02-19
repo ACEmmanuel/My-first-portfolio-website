@@ -8,6 +8,7 @@ const About = () => {
         <section className="container" id="About">
             <h1 className="head">ABOUT</h1>
             <hr className="hr"></hr>
+            <br></br>
             <p className="more">Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
            
             <div className="content">
@@ -20,10 +21,10 @@ const About = () => {
                         <br></br>
     
                     <p>I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
-                    </div>
+                </div>
 
 
-                    </div>
+            </div>
                     <div className="c2">
                         <img src="/ace.jpg" className="profile"></img>
                     </div>

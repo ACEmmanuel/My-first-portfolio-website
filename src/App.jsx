@@ -5,8 +5,10 @@ import React from 'react';
 import Header from './header.jsx'
 import Body from './body.jsx'
 import About from './about.jsx';
+import Skills from './Skills.jsx'
 import Contact from './contact.jsx';
 import Footer from './footer.jsx';
+import Projects from './Projects.jsx';
 import './main.css'
 
 function App() {
@@ -15,7 +17,9 @@ function App() {
        <Header />
        <Body /> 
        <About />
-       {/* <Contact /> */}
+       <Skills />
+       <Projects />
+       <Contact />
        <Footer />
     </>)
 }
