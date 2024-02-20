@@ -4,12 +4,17 @@ import './main.css'
 
 const Header = () =>{
 
-    const [isOpen, setIsOpen] = useState(true);
-  
-    const toggleMenu = () => {
-      setIsOpen(!isOpen);
-    };
+    const [isOpen, setIsOpen] = useState(false);
 
+    const toggleMenu = () =>{
+      setIsOpen(!isOpen)
+    }
+
+    if (isOpen){
+      document.body.classList.add('modal-active');
+    }else{
+      document.body.classList.remove('modal-active');
+    }
 
 
   return(
@@ -21,12 +26,34 @@ const Header = () =>{
             <ul className='has'>
 
               {/* <li> <a href='#Contact'><i class="ti ti-sun-filled"></i> </a></li> */}
-
-              <li><a href='#Contact'> <i class="ti ti-category"></i> </a></li>
-
+          
+              <li> <i class="ti ti-category" onClick={toggleMenu}></i> </li>
+                {isOpen && (
+                  <div className='modal'>
+                    <div className='overlay' onClick={toggleMenu}>
+                      <div className='modalContainer'>
+                        <li> <a href='#Home'> <i class="ti ti-home-2"></i> </a></li>
+                        <li> <a href='#About'> <i class="ti ti-user-circle"></i> </a></li>             
+                        <li> <a href='#Contact'> <i class="ti ti-phone"></i> </a></li>
+                        <li> <a> <i class="ti ti-x" onClick={toggleMenu} id='cancel'></i> </a></li>
+                      </div>  
+                    </div>
+                  </div>
+                )}
             </ul>
 
                 
+          </nav>
+        </div>
+
+    </>
+  )
+
+}
+
+export default Header;
+
+{/*  */}
                 {/* <div className="dropdown-container">
                   {isOpen ? (
                     <i className="fa-solid fa-xmark" onClick={toggleMenu} id='close'></i>
@@ -44,14 +71,3 @@ const Header = () =>{
                     </div>
                   )}
                 </div> */}
-          </nav>
-        </div>
-
-    </>
-  )
-
-}
-
-export default Header;
-
-{/*  */}

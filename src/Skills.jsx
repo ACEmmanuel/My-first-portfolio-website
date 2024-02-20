@@ -24,7 +24,7 @@ const Skills = () => {
                             <li>Terminal</li>
                             <li>Moongose</li>
                             <li>Javascript</li>
-                            <li>Graphic Design &#xf1f6;</li>
+                            <li>Graphic Design</li>
                         </ul>
                         <br></br>
                         <br></br>

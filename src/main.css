@@ -9,12 +9,18 @@
   --fs-h-about: clamp(1rem, 1.6vw, 6rem);
   --fs-h-text: clamp(1rem, 1.3vw, 3rem);
   --fs-h-form: clamp(.8rem, .5vw, 2rem);
+  
 
   --main-color: #181818;
   --main-clr: #1f1f1f;
   --grey-clr: #2b2b2b;
 
   --bg-clr: rgb(43, 116, 226);
+}
+
+::selection {
+  background-color: var(--bg-clr);
+  color: #ffffff;
 }
 
 
@@ -87,16 +93,71 @@ body{
 
 
 .ti{
-  font-size: 1.3rem;
+  font-size: minmax(1rem, 1.3rem);
 }
 
 .ti:active{
+  color: rgb(77, 144, 245);
+}
+
+.ti:hover{
   color: var(--bg-clr);
 }
 
-#close:hover{
-  font-size: 20px;
+
+.modalContainer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--main-clr);
+  max-width: 60vh;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  transition: all .5s ease-in-out;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 4px #2c2a2a;
 }
+
+.modalContainer i{
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+}
+
+.modalContainer li {
+  /* border: 1px solid red; */
+  padding: 2rem;
+
+}
+
+.overlay, .modal{
+  /* border: 1px solid red; */
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.overlay{
+  background-color: #181818c2;
+  backdrop-filter: blur(10px);
+}
+
+body.modal-active {
+  overflow: hidden;
+}
+
+#cancel{
+  color: red;
+}
+
 
 /* hero design */
 .hero{
@@ -108,10 +169,6 @@ body{
   text-wrap: balance;
   /* border: 1px solid red; */
 }
-
-/* .hero-container{
-  padding-top: 10vh;
-} */
 
 .hero-text{
   font-size: var(--fs-hero);
@@ -412,11 +469,11 @@ a{
   }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--main-color);
+    background-color: whitesmoke;
 }
 
 ::-webkit-scrollbar-thumb {
-      background-color: whitesmoke;
+      background-color: var(--bg-clr);
 }
 
 
@@ -482,6 +539,7 @@ a{
   .skill-container{
     padding-inline: .5rem;
   }
+
  }
 
  @media screen and (max-width: 500px){

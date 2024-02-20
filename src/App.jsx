@@ -17,7 +17,7 @@ function App() {
     <>
        <Header />
        <Body /> 
-       <Sidebar />
+       {/* <Sidebar /> */}
        <About />
        <Skills />
        <Projects />
