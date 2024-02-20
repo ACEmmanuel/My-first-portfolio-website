@@ -10,6 +10,8 @@ const Header = () =>{
       setIsOpen(!isOpen);
     };
 
+
+
   return(
     <>
 
@@ -17,10 +19,11 @@ const Header = () =>{
           <nav className='nav'>
             <div className='logo'><b className='clr'>ACE</b>mmanuel<span className='clr'>.</span></div>
             <ul className='has'>
-              <li class="fa-solid fa-sun"><a href="#Home"></a></li>
-              <li><a href="#About"></a></li>
-              <li className="fa fa-bars"><a href="#Projects"></a></li>
-              <li><a href="#Contact"></a></li>
+
+              {/* <li> <a href='#Contact'><i class="ti ti-sun-filled"></i> </a></li> */}
+
+              <li><a href='#Contact'> <i class="ti ti-category"></i> </a></li>
+
             </ul>
 
                 
