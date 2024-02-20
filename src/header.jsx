@@ -16,6 +16,11 @@ const Header = () =>{
       document.body.classList.remove('modal-active');
     }
 
+    const closeModal = (event) => {
+      event.stopPropagation();
+      toggleMenu();
+    };
+
 
   return(
     <>
@@ -31,7 +36,7 @@ const Header = () =>{
                 {isOpen && (
                   <div className='modal'>
                     <div className='overlay' onClick={toggleMenu}>
-                      <div className='modalContainer'>
+                      <div className='modalContainer' onClick={(e) => e.stopPropagation()}>
                         <li> <a href='#Home'> <i class="ti ti-home-2"></i> </a></li>
                         <li> <a href='#About'> <i class="ti ti-user-circle"></i> </a></li>             
                         <li> <a href='#Contact'> <i class="ti ti-phone"></i> </a></li>
