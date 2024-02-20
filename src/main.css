@@ -158,6 +158,9 @@ body.modal-active {
   color: red;
 }
 
+#menu{
+  font-size: 1.3rem;
+}
 
 /* hero design */
 .hero{

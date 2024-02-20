@@ -27,7 +27,7 @@ const Header = () =>{
 
               {/* <li> <a href='#Contact'><i class="ti ti-sun-filled"></i> </a></li> */}
           
-              <li> <i class="ti ti-category" onClick={toggleMenu}></i> </li>
+              <li> <i class="ti ti-category" onClick={toggleMenu} id='menu'></i> </li>
                 {isOpen && (
                   <div className='modal'>
                     <div className='overlay' onClick={toggleMenu}>
